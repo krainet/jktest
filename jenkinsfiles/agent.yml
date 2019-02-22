@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+spec:
+  containers:
+  - name: jnlp
+    image: jenkinsci/jnlp
+    resources:
+     limits:
+      memory: 1024i
+     requests:
+      cpu: "0.1"
+      memory: 1024i
+    securityContext:
+      privileged: true
+
