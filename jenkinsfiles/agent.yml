@@ -8,10 +8,10 @@ spec:
     image: jenkins/jnlp-slave:3.10-1
     resources:
      limits:
-      memory: 512Mi
+      memory: 
      requests:
       cpu: ""
-      memory: 512Mi
+      memory: 
     securityContext:
       privileged: true
 
