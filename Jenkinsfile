@@ -25,6 +25,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'vault-eks-token', passwordVariable: 'SECRET_ID', usernameVariable: 'ROLE_ID')]) {
                     sh """
 			sleep 30
+			cat hola.txt
 			echo "finish"
                 """
                 }
