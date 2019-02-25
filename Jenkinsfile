@@ -1,6 +1,5 @@
 #!groovy
 
-#@Library('letgo-jenkins-library') _
 
 pipeline {
     agent {
