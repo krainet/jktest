@@ -1,12 +1,12 @@
 #!groovy
 
-@Library('letgo-jenkins-library') _
+#@Library('letgo-jenkins-library') _
 
 pipeline {
     agent {
         kubernetes {
             label "docker-eks-suggestivesearch-agent-${BRANCH_NAME}-${env.BUILD_NUMBER}"
-            yamlFile './CI/jenkins/agent_dind.yml'
+            yamlFile './CI/jenkins/agent.yml'
         }
     }
     parameters {
