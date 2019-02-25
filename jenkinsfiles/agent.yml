@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: jnlp
-    image: jenkinsci/jnlp
+    image: jenkins/jnlp-slave
     resources:
      limits:
       memory: 128Mi
