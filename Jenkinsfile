@@ -22,13 +22,9 @@ pipeline {
     stages {
         stage('🚢 Configuring K8s tools') {
             steps{
-                withCredentials([usernamePassword(credentialsId: 'vault-eks-token', passwordVariable: 'SECRET_ID', usernameVariable: 'ROLE_ID')]) {
-                    sh """
-			sleep 30
-			cat hola.txt
-			echo "finish"
+                sh """
+		sleep 30
                 """
-                }
             }
         }
     }
