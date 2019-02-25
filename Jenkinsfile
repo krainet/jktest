@@ -5,7 +5,7 @@ pipeline {
     agent {
         kubernetes {
             label "docker-eks-suggestivesearch-agent-${BRANCH_NAME}-${env.BUILD_NUMBER}"
-            yamlFile './CI/jenkins/agent.yml'
+            yamlFile './jenkinsfiles/agent.yml'
         }
     }
     parameters {
